@@ -80,8 +80,7 @@ ssh-add -A 2>/dev/null;
 export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Enable autosuggestions
-source ~/.dotfiles/misc/oh-my-zsh-custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Extra paths
 export PATH="$HOME/.composer/vendor/bin:$PATH"
@@ -92,3 +91,6 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+eval $(/opt/homebrew/bin/brew shellenv)
+export PATH="/opt/homebrew/opt/libiconv/bin:$PATH"
