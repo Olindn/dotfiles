@@ -60,9 +60,6 @@ unset file
 export PATH="$PATH:$HOME/.rvm/bin"
 . $HOME/.dotfiles/shell/z.sh
 
-# Alias hub to git
-eval "$(hub alias -s)"
-
 # Sudoless npm https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
@@ -94,3 +91,14 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 eval $(/opt/homebrew/bin/brew shellenv)
 export PATH="/opt/homebrew/opt/libiconv/bin:$PATH"
+export PATH="/opt/homebrew/bin:${PATH}"
+export PICO_SDK_PATH=$HOME/Desktop/picosdk/pico-sdk
+
+source ~/.nvm/nvm.sh
+
+alias python="python3"
+
+export PATH="/opt/homebrew/opt/tcl-tk/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/tcl-tk/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/tcl-tk/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/tcl-tk/lib/pkgconfig"

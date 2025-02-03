@@ -15,14 +15,16 @@ alias deploy='envoy run deploy'
 alias deploy-code='envoy run deploy-code'
 alias mfs='php artisan migrate:fresh --seed'
 alias nah='git reset --hard;git clean -df'
-alias p="phpunit"
-alias pp="php artisan test --parallel"
-alias pf="phpunit --filter "
+alias p="pest"
+alias pp="pest --parallel"
+alias pf="pest --filter "
 alias d="php artisan dusk"
 alias sshconfig="vi ~/.ssh/config"
 alias copykey='command cat ~/.ssh/id_rsa.public | pbcopy'
 alias sail='./vendor/bin/sail'
 alias tunnel='valet share -subdomain=freekmurze -region=eu'
+alias cdiff='git diff | pbcopy'
+alias rdr='vendor/bin/rector process --dry-run'
 
 # JavaScript
 alias jest="./node_modules/.bin/jest"
